@@ -1,0 +1,81 @@
+/*Diseño movile priorizando el estilo en dispositivos moviles*/
+/*concepto: El modelo Mobile First es una filosofía que perfecciona el proceso de diseño de cualquier sitio web, buscando mejorar el diseño web adaptable.*/
+
+.titulo {
+    color:red;
+    font-size: 4rem;
+}
+.parrafo{
+    color:blue;
+    font-size: 2rem;
+}
+/*media se utiliza escribiendo los estilos más inclusivoa arriba y especificos o exclusivos debajo*/
+@media print and (max-width: 576px) { /*imprimira en este color determinado en el cod*/
+    .titulo{color: rgb(0, 234, 255);}
+    .parrafo{color: blueviolet;}
+}
+@media all and (max-width: 576px) { /*afecta a todos lo dispositivos
+     en este color determinado en el cod*/
+    .titulo{color: rgb(0, 234, 255);}
+    .parrafo{color: blueviolet;}
+}
+
+/*ó */
+/*
+@media (max-width: 950px){
+    .titulo{color: greenyellow;}
+    .parrafo{color: goldenrod;}
+}*/
+
+@media (min-width: 476px) { /*imprimira en un dispositivo de 0 a 576px de 
+    del color determinado 
+    en el cod*/
+    .titulo{color: rgb(255, 0, 93);}
+    .parrafo{color: rgb(237, 226, 21);}
+    
+}
+@media (min-width: 900px) { /*imprimira en un dispositivo de 0 a 576px de 
+    del color determinado 
+    en el cod*/
+    .titulo{color: rgb(16, 224, 228);}
+    .parrafo{color: rgb(236, 211, 23);
+    background-color:whitesmoke ;}
+    p{color: aquamarine;}
+    
+}
+@media (min-height: 353px) { /*imprimira en un dispositivo de 0 a 576px de 
+    del color determinado 
+    en el cod*/
+    .titulo{color: rgb(255, 0, 93);}
+    .parrafo{color: rgb(237, 226, 21);}
+    p{color: black;}
+    
+}
+@media (min-height: 900px) { /*imprimira en un dispositivo de 0 a 576px de 
+    del color determinado 
+    en el cod*/
+    .titulo{color: rgb(255, 0, 93);}
+    .parrafo{color: rgb(237, 226, 21);}
+    p{background-color: black;color: aliceblue;}
+    
+}
+@media (min-height: 353px),(min-width: 1000px) /* anidado
+    del color determinado 
+    en el cod*/{
+    .titulo{color: rgb(255, 0, 191);}
+    .parrafo{color: rgb(14, 178, 228);}
+    p{color: rgb(21, 210, 49);}
+    
+}
+
+@media (orientation:landscape) and (min-height:300px) { /*cuando cambia la orientación del dispositivo 
+    del color determinado 
+    en el cod*/
+ 
+    p{color: rgb(232, 47, 47)}
+    
+}
+
+
+
+    
